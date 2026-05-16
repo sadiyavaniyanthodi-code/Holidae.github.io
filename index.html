@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Holidae — Luxury Travel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <nav class="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-logo glass-logo">HOLIDAE</a>
+
+        <!-- Logo on the left, clicking it takes you back to the homepage (index.html) -->
+        <!-- glass-logo, a CSS class that gives it a glass/frosted effect look -->
+
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="booking.html">Booking</a></li>
+        </ul>
+
+        <a href="signup.html" class="btn-primary nav-cta" id="userBtn"> Sign Up </a>
+
+        <button class="hamburger" aria-label="Toggle menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+
+   
+    <div class="mobile-menu">
+      <a href="index.html">Home</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="booking.html">Booking</a>
+      <a href="booking.html" class="btn-primary">Book Now</a>
+    </div>
+  </nav>
+
+ 
+  <section class="hero">
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-brand">HOLIDAE</h1>
+      <p class="hero-tagline">Luxury journeys for the extraordinary traveller</p>
+
+      <!-- Search bar -->
+      <div class="search-bar">
+        <div class="search-field">
+          <label for="s-dest">Destination</label>
+          <input type="text" id="s-dest" placeholder="Where to?" />
+        </div>
+        <div class="search-field">
+          <label for="s-date">Travel Date</label>
+          <input type="date" id="s-date" />
+        </div>
+        <div class="search-field">
+          <label for="s-guests">Guests</label>
+          <select id="s-guests">
+            <option value="">Select</option>
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4+ Guests</option>
+          </select>
+        </div>
+        <a href="packages.html" class="btn-primary search-btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="scroll-hint">Scroll</div>
+     <!-- Small animated text or arrow at the bottom of the hero, tells users to scroll down -->
+  </section>
+
+ <!--three featured packages-->
+   <section class="packages-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Handpicked for you</p>
+        <h2 class="section-title">Featured Packages</h2>
+      </div>
+
+      <div class="packages-grid">
+
+        <!-- Dubai -->
+        <div class="pkg-card reveal delay-1">
+          <div class="pkg-img-wrap">
+            <img
+              src="images/Dubai.jpg"
+              alt="Dubai skyline" loading="lazy"
+            />
+            <span class="pkg-badge">5 Days</span>
+          </div>
+          <div class="pkg-body">
+            <p class="pkg-location">United Arab Emirates</p>
+            <h3 class="pkg-title">Golden Dubai Escape</h3>
+            <p class="pkg-desc">
+              Soar above the iconic skyline, dine under the stars in the desert,
+              and experience the world's most luxurious city like never before.
+            </p>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="from">From</span>
+                <span class="amount"><span class="currency">AED </span>4,299</span>
+              </div>
+              <a href="packages.html" class="btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- London -->
+        <div class="pkg-card reveal delay-2">
+          <div class="pkg-img-wrap">
+            <img
+              src="images/london.jpg"
+              alt="London" loading="lazy"
+            />
+            <span class="pkg-badge">7 Days</span>
+          </div>
+          <div class="pkg-body">
+            <p class="pkg-location">United Kingdom</p>
+            <h3 class="pkg-title">Classic London Journey</h3>
+            <p class="pkg-desc">
+              Walk the cobbled streets of history, enjoy world-class theatre,
+              and indulge in refined British culture across seven unforgettable days.
+            </p>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="from">From</span>
+                <span class="amount"><span class="currency">AED </span>6,850</span>
+              </div>
+              <a href="packages.html" class="btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Thailand -->
+        <div class="pkg-card reveal delay-3">
+          <div class="pkg-img-wrap">
+            <img
+              src="images/thailand.avif"
+              alt="Thailand" loading="lazy"
+            />
+            <span class="pkg-badge">10 Days</span>
+          </div>
+          <div class="pkg-body">
+            <p class="pkg-location">Thailand</p>
+            <h3 class="pkg-title">Serenity in Thailand</h3>
+            <p class="pkg-desc">
+              From ancient temples to turquoise bays, immerse yourself in the
+              vibrant culture and breathtaking landscapes of the Land of Smiles.
+            </p>
+            <div class="pkg-footer">
+              <div class="pkg-price">
+                <span class="from">From</span>
+                <span class="amount"><span class="currency">AED </span>5,199</span>
+              </div>
+              <a href="packages.html" class="btn-outline">View Details</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+ <!--Popular destinations-->
+  <section class="destinations-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Explore the world</p>
+        <h2 class="section-title">Popular Destinations</h2>
+      </div>
+
+      <div class="dest-grid reveal">
+        <div class="dest-item">
+          <img
+            src="images/maldives.jpg"
+            alt="Maldives" loading="lazy"
+          />
+          <div class="dest-overlay">
+            <p class="dest-name">Maldives</p>
+            <p class="dest-count">8 packages</p>
+          </div>
+        </div>
+
+        <div class="dest-item">
+          <img
+            src="images/Paris.jpg"
+            alt="Paris" loading="lazy"
+          />
+          <div class="dest-overlay">
+            <p class="dest-name">Paris</p>
+            <p class="dest-count">12 packages</p>
+          </div>
+        </div>
+
+        <div class="dest-item">
+          <img
+            src="images/taj.jpg"
+            alt="Taj Mahal" loading="lazy"
+          />
+          <div class="dest-overlay">
+            <p class="dest-name">Taj Mahal</p>
+            <p class="dest-count">9 packages</p>
+          </div>
+        </div>
+
+        <div class="dest-item">
+          <img
+            src="images/Bali.jpg"
+            alt="Bali" loading="lazy"
+          />
+          <div class="dest-overlay">
+            <p class="dest-name">Bali</p>
+            <p class="dest-count">11 packages</p>
+          </div>
+        </div>
+
+        <div class="dest-item">
+          <img
+            src="images/new york.jpg"
+            alt="New York" loading="lazy"
+          />
+          <div class="dest-overlay">
+            <p class="dest-name">New York</p>
+            <p class="dest-count">7 packages</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-preview">
+    <div class="container">
+      <div class="about-inner">
+        <div class="about-img-wrap reveal-left">
+          <img
+            src="images/about.jpeg"
+            alt="About Holidae" loading="lazy"
+          />
+          <div class="about-img-badge">
+            <div class="stat-num">12+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <p class="section-subtitle">Our story</p>
+          <h2 class="section-title">We Design Dreams,<br>Not Just Trips</h2>
+          <p>
+            At Holidae, we believe travel is the most transformative experience
+            a person can have. Since 2012, we have crafted thousands of bespoke
+            journeys each one shaped around the unique desires of our clients.
+          </p>
+          <p>
+            From intimate getaways to grand multi-continent adventures, our team
+            of passionate travel specialists ensures every detail is perfectly
+            considered.
+          </p>
+
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-icon"></div>
+              Worldwide Destinations
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"></div>
+              Luxury Accommodations
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"></div>
+              Full Travel Protection
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon"></div>
+              24/7 Concierge Support
+            </div>
+          </div>
+
+          <a href="about.html" class="btn-primary">Discover Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-logo glass-logo">HOLIDAE</p>
+          <p class="footer-about">Crafting extraordinary travel experiences for discerning travellers since 2012.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="packages.html">All Packages</a></li>
+            <li><a href="packages.html">Luxury Escapes</a></li>
+            <li><a href="packages.html">Honeymoon</a></li>
+            <li><a href="packages.html">Family Tours</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="booking.html">Book a Trip</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help Centre</a></li>
+            <li><a href="#">Travel Insurance</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Holidae Travel. All rights reserved.</p>
+        <p>Crafted with care for extraordinary journeys.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
